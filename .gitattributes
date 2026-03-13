@@ -1,0 +1,17 @@
+# Автоматически определять текстовые файлы
+* text=auto
+
+# Явно указываем кодировку для разных типов файлов
+*.md text working-tree-encoding=UTF-8
+*.py text working-tree-encoding=UTF-8
+*.cpp text working-tree-encoding=UTF-8
+*.h text working-tree-encoding=UTF-8
+*.txt text working-tree-encoding=UTF-8
+*.json text working-tree-encoding=UTF-8
+*.yml text working-tree-encoding=UTF-8
+*.yaml text working-tree-encoding=UTF-8
+
+# Бинарные файлы
+*.png binary
+*.jpg binary
+*.pb binary

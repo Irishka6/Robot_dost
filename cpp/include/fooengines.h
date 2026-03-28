@@ -1,3 +1,6 @@
+#ifndef FOOENGINES_H
+#define FOOENGINES_H
+
 #include "engines.h"
 #include <string>
 
@@ -7,14 +10,20 @@ private:
     int current_speed;
     std::string engine_type;
 
-public:
-    // Конструктор и деструктор
-    FooEngine();
-    ~FooEngine() override;
-
-    // Переопределение виртуальных методов базового класса
+public: 
+    FooEngine();  // конструктор
+    ~FooEngine() override;  // деструктор
+    
     void forward(int time_ms) override;
     void right(int time_ms) override;
     void left(int time_ms) override;
     void stop() override;
-}
+    
+    // Дополнительные методы
+    int getCurrentSpeed() const;
+    bool isMoving() const;
+    std::string getEngineType() const;
+    void calibrate();
+};
+
+#endif // FOOENGINES_H

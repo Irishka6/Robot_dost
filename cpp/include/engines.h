@@ -1,5 +1,5 @@
-#define ROBOT_H
-
+#ifndef ENGINES_H
+#define ENGINES_H
 // Базовый абстрактный класс для разных типов роботов
 class AEngine {
 public:
@@ -14,5 +14,6 @@ public:
     
     virtual void stop() = 0;
 };
+#endif // ENGINES_H
 
     
